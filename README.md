@@ -1,3 +1,5 @@
+:exclamation: *NOTE*: This is an example from the [INTERSECT training "Packaging"](https://intersect-training.org/packaging/) course
+
 # Package
 
 `package` is a simple Python library that contains a single function for rescaling arrays.
