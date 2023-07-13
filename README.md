@@ -22,6 +22,20 @@ from package.rescale import rescale
 rescale(np.linspace(0, 100, 5))
 ```
 
+## Docs using Dockerfile
+
+Build:
+```
+docker build -t intersect-training-packaging .
+```
+
+Run:
+```
+docker run -p 8080:80 intersect-training-packaging
+```
+
+Go to http://localhost:8080 for Sphinx Docs
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
