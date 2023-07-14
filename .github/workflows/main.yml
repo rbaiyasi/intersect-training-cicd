@@ -1,8 +1,19 @@
-name: example
+name: Code Checks
 on: push
 jobs: 
   greetings: 
     runs-on: ubuntu-latest
     steps: 
       - name: Greetings!
-        run: echo hello world
+        run: echo hello world 
+
+  test-python-3-10:
+    name: Check Python 3.10 on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with: 
+          python-version: "3.10" 
+
